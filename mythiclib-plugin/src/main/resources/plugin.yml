@@ -1,0 +1,25 @@
+name: MythicLib
+author: Indyuce
+main: io.lumine.mythic.lib.MythicLib
+api-version: 1.14
+version: ${project.version}
+description: ${project.description}
+website: www.phoenixdevt.fr
+softdepend: [ WorldGuard,Residence,MythicMobs,PlaceholderAPI,Fabled ]
+loadbefore: [ MMOProfiles, MMOCore ]
+commands:
+  mythiclib:
+    description: 'Main command for MythicLib'
+    permission: 'mythiclib.admin'
+    aliases: [ 'ml' ]
+permissions:
+  mythiclib.admin:
+    default: op
+  mythiclib.mythiclib.command.healthscale:
+    default: op
+  mythiclib.tempstat:
+    default: op
+  mythiclib.superworkbench:
+    default: op
+  mythiclib.megaworkbench:
+    default: op
